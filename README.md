@@ -1,4 +1,4 @@
-# Project-01 : Guess the Number Game (JS-01)
+#  Guess the Number Game 
 
 ## Description
 Project aims to create find the number game (between 0 to 100).
@@ -34,3 +34,7 @@ Project aims to create find the number game (between 0 to 100).
 ## Objective
 
 Build a Find the Number Game (Between 0 to 100)
+
+## Live 
+[Live Guess the number Page](https://hellenkuttery.github.io/guessNumberV2/)
+
