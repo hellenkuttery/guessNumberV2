@@ -6,11 +6,11 @@ let check = document.querySelector(".check");
 const guess = document.querySelector(".guess");
 let myScore = document.querySelector(".hak");
 const body=document.querySelector("body")
-const img=document.querySelector(".img")
+
 
 let hak = 10;
 let enYuksekSkor = 0;
-img.style.display="none"
+
 
 //* her check butonuna basınca olacaklar
 
@@ -34,18 +34,18 @@ check.addEventListener("click", () => {
   //? Tahmin doğruysa
   else if (tahmin == rastgeleSayi) {
 
-    document.querySelector(".container").style.display="none";
-    img.style.display="block"
-    // message.textContent = "🌻Tebrikler Bildiniz🌻";
-    // document.querySelector("body").style.backgroundColor = "green";
-    // //? Tahmininiz bu sayı diye belirtmek için
-    // document.querySelector(".number").textContent = rastgeleSayi;
-    // check.disabled = true;
+    // document.querySelector(".container").style.display="none";
+    // img.style.display="block"
+    message.textContent = "🌻Tebrikler Bildiniz🌻";
+    document.querySelector("body").style.backgroundColor = "green";
+    //? Tahmininiz bu sayı diye belirtmek için
+    document.querySelector(".number").textContent = rastgeleSayi;
+    check.disabled = true;
 
-    // if (hak>enYuksekSkor) {
-    //     enYuksekSkor=hak;
-    //     document.querySelector(".top-score").textContent=enYuksekSkor
-    // }
+    if (hak>enYuksekSkor) {
+        enYuksekSkor=hak;
+        document.querySelector(".top-score").textContent=enYuksekSkor
+    }
     
   } else {
     if (hak > 1) {
